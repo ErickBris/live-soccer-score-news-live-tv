@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.example.rnmediadev007.livesoccerapp"
+
+                                manifestPlaceholders = [manifestApplicationId: "${applicationId}",
+                                onesignal_app_id: "d66e0bf7-xxxx-xxxx-xxxx-12a12f8bdee8",
+                                onesignal_google_project_number: "xxxxxxxxxxxx"]
+
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.android.gms:play-services-ads:+'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:support-v4:22.0.0'
+    // Required for OneSignal, even if you have added FCM.
+    compile 'com.google.android.gms:play-services-gcm:+'
+    // Required for geotaggin
+    compile 'com.google.android.gms:play-services-location:+'
+    compile 'com.google.android.gms:play-services-analytics:+'
+    compile 'joda-time:joda-time:2.9.4'
+    compile 'com.android.support:recyclerview-v7:22.0.+'
+    compile 'com.onesignal:OneSignal:2.+@aar'
+    compile files('libs/awais.jar')
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+
+
+    >
+
+
+    <RelativeLayout
+
+        android:id="@+id/rl_home"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:background="@drawable/border_cell"
+        android:padding="5dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="90'"
+            android:textColor="#222"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/minute"
+
+
+            />
+
+        <TextView
+            android:id="@+id/player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="player name"
+
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/player_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="player name"
+            android:textColor="#ff0000"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_away"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_home"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_cell"
+        android:padding="10dp"
+        android:visibility="gone"
+
+        >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel"
+
+    >
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="player name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/player1_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player1"
+            android:text="player out"
+           android:visibility="gone"
+            android:textColor="#ff0000" />
+</RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/rel"
+
+            />
+
+        <TextView
+            android:id="@+id/minute1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="90'"
+            android:textColor="#222"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

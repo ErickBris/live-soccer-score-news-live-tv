@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#53AF30</color>
+    <color name="colorPrimaryDark">#53AF30</color>
+    <color name="acitivty_main_bg">#8c8c8c</color>
+    <color name="hr_line">#77dad9d9</color>
+    <color name="colorAccent1">#fffefe</color>
+    <color name="colorAccent">#8c8c8c</color>
+    <color name="offwhite">#f4f4f4</color>
+    <color name="black">#222</color>
+    <color name="transprent">#00000000</color>
+    <color name="gradient_color1">#0F6BB8</color>
+    <color name="gradient_color2">#5AB13C</color>
+    <color name="tabs_detail_bg">#F3F3F3</color>
+    <color name="trans">#00000000</color>
+</resources>

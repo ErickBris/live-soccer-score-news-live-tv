@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/rl1"
+            android:layout_marginLeft="10dp"
+           >
+
+            <ImageView
+                android:id="@+id/home_team_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/flag_icon" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/home_team_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:maxLines="2"
+            android:text="team"
+            android:textAlignment="center"
+            android:textColor="#222"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp" />
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/live_top_bar_blue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2 May 2017"
+                android:textColor="#fff"
+                android:id="@+id/date"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/top_bar"
+           >
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+                android:text="2 - 0"
+                android:textColor="#222"
+                android:textSize="40dp" />
+            <TextView
+                android:id="@+id/minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/score"
+                android:textColor="#ff0000"
+                android:text="90'"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/rl2"
+            android:layout_marginRight="10dp"
+           >
+        <ImageView
+            android:id="@+id/away_team_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/flag_icon" />
+
+
+    </RelativeLayout>
+        <TextView
+
+            android:id="@+id/away_team_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl2"
+            android:text="team"
+            android:textAlignment="center"
+            android:textColor="#222"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textSize="12dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/countryname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:background="#FFF"
+            android:text="countery"
+            android:textSize="14dp"
+            android:textColor="#FF000000" />
+    </RelativeLayout>
+</LinearLayout>

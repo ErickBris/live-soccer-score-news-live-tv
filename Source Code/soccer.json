@@ -1,0 +1,14 @@
+{"streaming":[{"status":"yes"}],
+"channels":[
+{"Name":"Eurosport","url":"http://esioslive6-i.akamaihd.net/hls/live/202874/AL_P_ESP1_INTER_ENG/playlist_1000.m3u8"},
+{"Name":"NFL Network","url":"http://163.172.81.33:1234/live/App0015/li30vefpymwsisd/154.ts"},
+{"Name":"Sky Net Sports 1","url":"http://163.172.81.33:1234/live/App0015/li30vefpymwsisd/307.ts"},
+{"Name":"Sportsnet 360 HD","url":"http://163.172.81.33:1234/live/App0015/li30vefpymwsisd/314.ts"},
+{"Name":"Fútbol HD","url":"http://163.172.81.33:1234/live/App0015/li30vefpymwsisd/27.ts"},
+{"Name":"Sports Tv HD","url":"http://stream.sportstv.com.tr/sportstv/SportsTV3/gmswf.m3u8"},
+{"Name":"ESPN2","url":"http://163.172.81.33:1234/live/App0015/li30vefpymwsisd/326.ts"},
+{"Name":"Real Madrid TV","url":"http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_0700_av-p.m3u8?sd=10&rebase=on"},
+{"Name":"Sportal BG HD","url":"http://pri.cdn.bg:2001/fls/sportal_tv_hd.stream/playlist.m3u8"},
+{"Name":"TileSport TV","url":"rtmp://tv1.streampulse.eu/tilesport/movie1"},
+{"Name":"PAC-12 Washington","url":"http://xrxs.net/video/live-p12wash-4728.m3u8"}
+]}

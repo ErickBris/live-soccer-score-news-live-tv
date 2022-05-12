@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SCROLLER_ID"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/hidden_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/possision_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/possision_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/possision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Posesion" />
+
+                <TextView
+                    android:id="@+id/possision_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/possision_rl"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:id="@+id/f1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="#C8C6C7">
+
+                    <View
+                        android:id="@+id/home_pos_progress"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#53AF30" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/f1"
+                    android:background="#C8C6C7"
+
+
+                    >
+
+                    <View
+                        android:id="@+id/away_pos_progress"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="#0161B8" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shots_on_goals_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/shots_on_goals_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/shots_on_goals_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Shots on Goals" />
+
+                <TextView
+                    android:id="@+id/shots_on_goals_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shots_on_goals_rl"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:id="@+id/shots_on_goals_rl1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="#C8C6C7">
+
+                    <View
+                        android:id="@+id/progress_shots_on_goals_home"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gradient_color2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/shots_on_goals_rl1"
+                    android:background="#C8C6C7"
+
+
+                    >
+
+                    <View
+                        android:id="@+id/progress_shots_on_goals_away"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gradient_color1" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shots_total_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/shots_total_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/shots_total_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Shots Total" />
+
+                <TextView
+                    android:id="@+id/shots_total_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shots_on_goals_rl"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:id="@+id/shots_total_rl1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="#C8C6C7">
+
+                    <View
+                        android:id="@+id/progress_shots_total_home"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gradient_color2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/shots_total_rl1"
+                    android:background="#C8C6C7"
+
+
+                    >
+
+                    <View
+                        android:id="@+id/progress_shots_total_away"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gradient_color1" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fouls_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/fouls_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/fouls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Fouls" />
+
+                <TextView
+                    android:id="@+id/fousls_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fouls_rl"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:id="@+id/foul_f1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="#C8C6C7">
+
+                    <View
+                        android:id="@+id/fouls_progress"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#53AF30" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/foul_f1"
+                    android:background="#C8C6C7"
+
+
+                    >
+
+                    <View
+                        android:id="@+id/away_fouls_progress"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="#0161B8" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/corners_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/corners_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/corners_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Corners" />
+
+                <TextView
+                    android:id="@+id/corners_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shots_on_goals_rl"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:id="@+id/corners_rl1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="#C8C6C7">
+
+                    <View
+                        android:id="@+id/progress_corners_home"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gradient_color2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/corners_rl1"
+                    android:background="#C8C6C7"
+
+
+                    >
+
+                    <View
+                        android:id="@+id/progress_corners_away"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gradient_color1" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/offsides_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/offsides_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/offsides_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="offsides" />
+
+                <TextView
+                    android:id="@+id/offsides_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shots_on_goals_rl"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:id="@+id/offsides_rl1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="#C8C6C7">
+
+                    <View
+                        android:id="@+id/progress_offsides_home"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gradient_color2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/offsides_rl1"
+                    android:background="#C8C6C7"
+
+
+                    >
+
+                    <View
+                        android:id="@+id/progress_offsides_away"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gradient_color1" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yellow_cards_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/yellow_cards_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/yellow_cards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Yellow Cards" />
+
+                <TextView
+                    android:id="@+id/yellow_cards_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fouls_rl"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:id="@+id/yellow_cards_f1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="#C8C6C7">
+
+                    <View
+                        android:id="@+id/yellow_cards_progress_home"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#53AF30" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/yellow_cards_f1"
+                    android:background="#C8C6C7"
+
+
+                    >
+
+                    <View
+                        android:id="@+id/away_yellow_cards_progress"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="#0161B8" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/red_cards_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/red_cards_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/red_cards_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Red Cards" />
+
+                <TextView
+                    android:id="@+id/red_cards_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shots_on_goals_rl"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:id="@+id/red_cards_rl1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="#C8C6C7">
+
+                    <View
+                        android:id="@+id/progress_red_cards_home"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gradient_color2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/red_cards_rl1"
+                    android:background="#C8C6C7"
+
+
+                    >
+
+                    <View
+                        android:id="@+id/progress_red_cards_away"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gradient_color1" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/saves_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/saves_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/saves_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Saves" />
+
+                <TextView
+                    android:id="@+id/saves_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shots_on_goals_rl"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:id="@+id/saves_rl1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="#C8C6C7">
+
+                    <View
+                        android:id="@+id/progress_saves_home"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gradient_color2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/saves_rl1"
+                    android:background="#C8C6C7"
+
+
+                    >
+
+                    <View
+                        android:id="@+id/progress_saves_away"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/gradient_color1" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nodatafound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No Data found"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="100dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Live Soccer 2017</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_disclaimer">Disclaimer</string>
+    <string name="disclaimer">This App based on Open source API, all Online Public Data Fetching from API, Hence We Are Not Violating Any Terms</string>
+    <string name="title_activity_news_detail">news_detail</string>
+    <string name="nav_item_home">Live Score</string>
+    <string name="nav_item_streaming">Live Tv</string>
+    <string name="nav_item_recent">Recent</string>
+    <string name="nav_item_notifications">News</string>
+    <string name="rate">Rate</string>
+    <string name="share">Share</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_streaming</item>
+        <item>@string/nav_item_recent</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/rate</item>
+        <item>@string/share</item>
+    </string-array>
+    <string name="title_activity_live_matches__details">Live_matches_Details</string>
+    <string name="title_activity_fixture">Fixture</string>
+    <string name="title_activity_video">video</string>
+    <string name="title_activity_display_renking">display_renking</string>
+    <string name="title_activity_top_scorers">top_scorers</string>
+    <string name="rating">If you find our app useful, please rate it 5 stars. Your support helps us improve the app.</string>
+    <string name="title_activity_splash">Live Soccer 2017</string>
+    <string name="title_warning">Warniing</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_cancel">Cancel</string>
+    <string name="info_lose_internet">No Internet connection please check again!</string>
+
+</resources>
